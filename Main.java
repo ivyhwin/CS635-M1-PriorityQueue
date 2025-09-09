@@ -44,7 +44,7 @@ public class Main {
         // Print the entire queue in priority order without modifying it
         pq.printPriorityOrder();
 
-        // Optional: Demonstrate the destructive popping process
+        // Demonstrate the destructive popping process
         System.out.println("\nPopping in priority order (destructive):");
         while (!pq.isEmpty()) {
             Student s = pq.pop(); // Remove and get the highest priority student
