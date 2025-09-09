@@ -7,18 +7,18 @@
 import java.util.ArrayList;
 
 /**
- * A custom implementation of a binary MAX-heap.
- * This is the core data structure that efficiently manages elements based on their priority.
- * It stores Node objects which contain the calculated score and all necessary tie-breaker data.
- * This class ensures O(log N) for push and pop operations, and O(1) for peek.
+ * Binary max-heap I wrote for this project.
+ * It keeps the highest-priority item at the top so I can grab it fast.
+ * Each entry is a Node with the precomputed score plus tie-break info.
+ * Ops: push/pop in O(log N), peek in O(1).
  */
 class BinaryMaxHeap {
 
     /**
-     * A static inner class representing a node in the heap.
-     * It is immutable (all fields are final) to ensure consistency and thread safety.
-     * It stores the primary score and all tie-breaking criteria to enable deterministic comparisons.
-     */
+     * Heap node: one item in the heap.
+     * Static and immutable (all fields are final) so it stays consistent once built.
+     * Packs the precomputed score plus tie-break data, making comparisons fast and predictable.
+    */
     static class Node {
         final double score;     // Primary comparison key (higher is better)
         final Student student;  // The actual Student object payload
