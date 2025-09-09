@@ -102,7 +102,7 @@ class BinaryMaxHeap {
         return removedNode;
     }
 
-    // --- Core Heap Mechanics (Helper Methods) ---
+    
 
     // Returns the index of the parent node for a given index.
     private static int parent(int i) { return (i - 1) / 2; }
@@ -190,12 +190,12 @@ class BinaryMaxHeap {
         if (Math.abs(a.gpa - b.gpa) > EPS) {
             return a.gpa > b.gpa;
         }
-        // 4. Tie-Breaker 3: Name (lexicographical order, A→Z wins, i.e., smaller string)
+        // 4. Tie-Breaker 3: Name 
         int nameComparison = a.name.compareTo(b.name);
         if (nameComparison != 0) {
             return nameComparison < 0;
         }
-        // 5. Tie-Breaker 4: RedID (lexicographical order, A→Z wins)
+        // 5. Tie-Breaker 4: RedID 
         int idComparison = a.redId.compareTo(b.redId);
         return idComparison < 0;
     }
