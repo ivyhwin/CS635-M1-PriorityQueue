@@ -2,14 +2,11 @@
  * Ivy Huynh
  * CS635-M1-Priority Queue Assignment
  * **********************************
- */
-
-import java.util.*;
-
-/**
  * The main driver class to demonstrate the functionality of the StudentPriorityQueue.
  * It creates a queue, adds various students (including edge cases and ties), and displays the results.
  */
+
+
 public class Main {
     public static void main(String[] args) {
         // Instantiate the priority queue
