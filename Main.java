@@ -12,7 +12,7 @@ public class Main {
         // Instantiate the priority queue
         StudentPriorityQueue pq = new StudentPriorityQueue();
 
-        // ---------- Add typical, realistic students ----------
+        // ---------- Add students ----------
         pq.add(new Student("Ivy Huynh",      "R1234567", "ivy.huynh@university.edu",      3.7, 128));
         pq.add(new Student("Alex Kim",       "R2000001", "alex.kim@university.edu",       3.2, 96));
         pq.add(new Student("Jordan Lee",     "R2000002", "jordan.lee@university.edu",     2.9, 72));
