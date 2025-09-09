@@ -5,9 +5,9 @@
  */
 
 /**
- * An immutable data model class representing a Student.
- * Encapsulates all student data and validates it upon construction.
- * The class is final to prevent inheritance and ensure immutability is not broken.
+ * Student model I use in this project (immutable).
+ * I validate all fields in the constructor so every instance starts in a good state.
+ * Marked final to prevent subclassing and keep immutability intact.
  */
 public final class Student {
     // Public class constants define the valid domain for GPA and units.
