@@ -5,10 +5,9 @@
  */
 
 /**
- * A priority queue implementation specialized for managing Student objects.
- * This class acts as a facade, providing a clean, simple API for queue operations
- * while delegating the underlying heap logic to the BinaryMaxHeap class.
- * It ensures O(logN) insertion and removal, and O(1) peek operations.
+ * Priority queue specialized for Student.
+ * A small facade: I expose add/peek/pop (and print-in-order) and let BinaryMaxHeap do the heavy lifting.
+ * Applies the Student priority + deterministic tie-breaks. O(log N) add/pop, O(1) peek
  */
 public class StudentPriorityQueue { // Creates a queue ready to accept students
 
