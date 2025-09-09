@@ -9,6 +9,8 @@
  * A small facade: I expose add/peek/pop (and print-in-order) and let BinaryMaxHeap do the heavy lifting.
  * Applies the Student priority + deterministic tie-breaks. O(log N) add/pop, O(1) peek
  */
+import java.util.List;
+import java.util.ArrayList;
 public class StudentPriorityQueue { // Creates a queue ready to accept students
 
     // The underlying data structure: a custom binary max-heap.
